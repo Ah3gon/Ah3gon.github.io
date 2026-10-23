@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ильдар — Python-разработчик</title>
+  <meta name="description" content="Python-разработчик: Telegram-боты, интеграции с нейросетями и API, веб-приложения и базы данных. Проекты с живыми ссылками.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
+
+  <!-- На этапе 3 (GitHub Pages) заменить пути на абсолютные URL: Telegram не берёт относительные -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Ильдар — Python-разработчик">
+  <meta property="og:description" content="Telegram-боты, интеграции с нейросетями и API, веб-приложения и базы данных.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Тема до отрисовки, чтобы не было вспышки: сохранённый выбор, иначе системная
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Ильдар</a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Переключить тему">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Московская область · готов к удалённой работе</p>
+        <h1 id="hero-title">Ильдар — <span class="accent nowrap">Python-разработчик</span></h1>
+        <p class="lead">Telegram-боты, интеграции с нейросетями и API, веб-приложения и базы данных.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Проекты</a>
+          <a class="btn btn-ghost" href="https://t.me/Ah3gon" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21.5 4.2 2.9 11.4c-1 .4-1 1.7 0 2l4.6 1.5 1.8 5.5c.3.8 1.3 1 1.9.4l2.6-2.5 4.6 3.4c.7.5 1.7.1 1.9-.7l3-14.6c.2-1-.8-1.8-1.8-1.4ZM9.8 14.4l-.5 4-1.4-4.4 9.6-6.6-7.7 7Z" fill="currentColor"/></svg>
+            Написать в Telegram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 id="about-title">Обо мне</h2>
+        <p>Делаю Telegram-ботов и веб-приложения на Python — от схемы базы данных до запуска в работу.</p>
+        <p>Разворачиваю проекты на своём VPS в Docker, поэтому все боты из раздела «Проекты» работают вживую — их можно открыть и попробовать.</p>
+        <p>Подключаю нейросети, например YandexGPT, а в ежедневной работе использую Claude Code.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Навыки</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>Python</li><li>aiogram 3</li><li>Flask</li><li>SQLAlchemy</li><li>Alembic</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Базы данных</h3>
+            <ul class="tags">
+              <li>PostgreSQL</li><li>MySQL</li><li>индексы</li><li>процедуры</li><li>триггеры</li><li>мониторинг</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Инфраструктура</h3>
+            <ul class="tags">
+              <li>Docker</li><li>Docker Compose</li><li>Linux VPS</li><li>Git/GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI</h3>
+            <ul class="tags">
+              <li>YandexGPT</li><li>OpenAI-совместимые API</li><li>Claude Code</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Проекты</h2>
+        <div class="projects">
+
+          <article class="card">
+            <!-- Заглушка: заменить скриншотом лендинга после этапа 2 -->
+            <button class="card-media" type="button" data-full="assets/img/barbershop-placeholder.svg" aria-label="Увеличить изображение: лендинг барбершопа «Пример»">
+              <img src="assets/img/barbershop-placeholder.svg" alt="Заглушка превью лендинга барбершопа «Пример»" width="1600" height="900" loading="lazy">
+            </button>
+            <div class="card-body">
+              <h3>Лендинг барбершопа «Пример»</h3>
+              <p>Демонстрационный сайт для малого бизнеса: услуги и цены, шаги записи, мастера и контакты. Кнопка записи ведёт в Telegram-бота.</p>
+              <ul class="tags tags-sm"><li>HTML</li><li>CSS</li></ul>
+              <a class="btn btn-primary btn-sm" href="barbershop/">Открыть сайт</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card-media" type="button" data-full="assets/img/booking-bot.webp" aria-label="Увеличить изображение: бот записи клиентов">
+              <picture>
+                <source type="image/webp" srcset="assets/img/booking-bot-800.webp 800w, assets/img/booking-bot.webp 1600w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/booking-bot.png" alt="Коллаж экранов бота записи: выбор услуги, даты и времени, подтверждение записи" width="1200" height="643" loading="lazy">
+              </picture>
+            </button>
+            <div class="card-body">
+              <h3>Бот записи клиентов</h3>
+              <p>Выбор услуги, даты и свободного времени, подтверждение, отмена записи, уведомления админу.</p>
+              <ul class="tags tags-sm"><li>Python</li><li>aiogram 3</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <a class="btn btn-primary btn-sm" href="https://t.me/zakaza1bot" target="_blank" rel="noopener">Открыть бота</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card-media" type="button" data-full="assets/img/shop-bot.webp" aria-label="Увеличить изображение: бот-магазин">
+              <picture>
+                <source type="image/webp" srcset="assets/img/shop-bot-800.webp 800w, assets/img/shop-bot.webp 1600w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/shop-bot.png" alt="Коллаж экранов бота-магазина: каталог, корзина, оформление заказа" width="1200" height="631" loading="lazy">
+              </picture>
+            </button>
+            <div class="card-body">
+              <h3>Бот-магазин</h3>
+              <p>Каталог с категориями, корзина, оформление заказа, смена статусов с оповещением клиента.</p>
+              <ul class="tags tags-sm"><li>Python</li><li>aiogram 3</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <a class="btn btn-primary btn-sm" href="https://t.me/SOP1test2bot" target="_blank" rel="noopener">Открыть бота</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card-media" type="button" data-full="assets/img/support-bot.webp" aria-label="Увеличить изображение: бот поддержки">
+              <picture>
+                <source type="image/webp" srcset="assets/img/support-bot-800.webp 800w, assets/img/support-bot.webp 1600w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/support-bot.png" alt="Коллаж экранов бота поддержки: частые вопросы, обращение к оператору, тикеты" width="1200" height="625" loading="lazy">
+              </picture>
+            </button>
+            <div class="card-body">
+              <h3>Бот поддержки</h3>
+              <p>Частые вопросы, обращения к оператору, тикеты с ответом и закрытием.</p>
+              <ul class="tags tags-sm"><li>Python</li><li>aiogram 3</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <a class="btn btn-primary btn-sm" href="https://t.me/H31p33rbot" target="_blank" rel="noopener">Открыть бота</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card-media" type="button" data-full="assets/img/ai-bot.webp" aria-label="Увеличить изображение: AI-ассистент на YandexGPT">
+              <picture>
+                <source type="image/webp" srcset="assets/img/ai-bot-800.webp 800w, assets/img/ai-bot.webp 1600w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/ai-bot.png" alt="Коллаж экранов AI-ассистента: диалог с YandexGPT, очистка истории, лимиты" width="1200" height="1120" loading="lazy">
+              </picture>
+            </button>
+            <div class="card-body">
+              <h3>AI-ассистент на YandexGPT</h3>
+              <p>Диалог с YandexGPT с памятью контекста, очистка истории, дневные лимиты для защиты баланса API.</p>
+              <ul class="tags tags-sm"><li>Python</li><li>aiogram 3</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <div class="card-cta">
+                <a class="btn btn-primary btn-sm" href="https://t.me/ChatAIGPTBot" target="_blank" rel="noopener">Открыть бота</a>
+                <span class="note">демо, до 20 сообщений в день</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card-media" type="button" data-full="assets/img/toir.webp" aria-label="Увеличить изображение: система ТОиР">
+              <picture>
+                <source type="image/webp" srcset="assets/img/toir-800.webp 800w, assets/img/toir.webp 1320w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/toir.png" alt="Обложка системы ТОиР: экраны веб-системы учёта ремонтов и обслуживания оборудования" width="1200" height="800" loading="lazy">
+              </picture>
+            </button>
+            <div class="card-body">
+              <h3>Система ТОиР</h3>
+              <p>Веб-система учёта ремонтов и обслуживания оборудования: графики ППР, мониторинг СУБД, анализ запросов, роли, бэкапы.</p>
+              <ul class="tags tags-sm"><li>Python</li><li>Flask</li><li>MySQL</li></ul>
+              <span class="badge">Дипломный проект</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts" aria-labelledby="contacts-title">
+      <div class="container narrow">
+        <h2 id="contacts-title">Контакты</h2>
+        <p>Открыт к предложениям о работе и проектам. Быстрее всего отвечаю в Telegram.</p>
+        <ul class="contacts">
+          <li>
+            <span class="contact-label">Telegram</span>
+            <a href="https://t.me/Ah3gon" target="_blank" rel="noopener">@Ah3gon</a>
+          </li>
+          <li>
+            <span class="contact-label">Почта</span>
+            <a href="mailto:ildaraytkulov20@gmail.com">ildaraytkulov20@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Ильдар</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Просмотр изображения">
+    <button class="icon-btn lightbox-close" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <img class="lightbox-img" src="data:," alt="">
+  </dialog>
+</body>
+</html>
