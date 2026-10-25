@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Барбершоп «Пример» — запись онлайн</title>
+  <meta name="description" content="Мужские и детские стрижки, борода, камуфляж седины. Онлайн-запись через Telegram-бота за минуту. Ежедневно 10:00–19:00. Демо-проект.">
+  <meta name="theme-color" content="#14110e">
+  <meta name="color-scheme" content="dark">
+
+  <!-- На этапе 3 (GitHub Pages) заменить пути на абсолютные URL: Telegram не берёт относительные -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Барбершоп «Пример» — запись онлайн">
+  <meta property="og:description" content="Стрижки и борода без очередей — запись за минуту в Telegram. Демо-проект.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Playfair+Display:wght@700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Барбершоп «Пример», в начало страницы">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="9" cy="23" r="4.5"/><circle cx="23" cy="23" r="4.5"/><path d="M12 20 24 4M20 20 8 4"/></g></svg>
+        <span>«Пример»</span>
+      </a>
+      <nav class="nav" aria-label="Разделы">
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#masters">Мастера</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-sm" href="https://t.me/zakaza1bot" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <picture class="hero-bg">
+        <source type="image/webp" srcset="assets/img/hero-1200.webp 1200w, assets/img/hero-2000.webp 2000w" sizes="100vw">
+        <img src="assets/img/hero.jpg" alt="" width="2000" height="1333" fetchpriority="high">
+      </picture>
+      <div class="container hero-content">
+        <p class="eyebrow">Барбершоп · <span class="nowrap">ежедневно 10:00–19:00</span></p>
+        <h1 id="hero-title">Барбершоп «Пример»</h1>
+        <p class="lead">Стрижки и борода без очередей — запись за минуту в Telegram.</p>
+        <a class="btn btn-lg" href="https://t.me/zakaza1bot" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21.5 4.2 2.9 11.4c-1 .4-1 1.7 0 2l4.6 1.5 1.8 5.5c.3.8 1.3 1 1.9.4l2.6-2.5 4.6 3.4c.7.5 1.7.1 1.9-.7l3-14.6c.2-1-.8-1.8-1.8-1.4ZM9.8 14.4l-.5 4-1.4-4.4 9.6-6.6-7.7 7Z" fill="currentColor"/></svg>
+          Записаться онлайн
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container narrow">
+        <p class="kicker">Прайс</p>
+        <h2 id="services-title">Услуги и цены</h2>
+        <ul class="price-list">
+          <li><span class="price-name">Мужская стрижка</span><span class="price-dots" aria-hidden="true"></span><span class="price-value">1200 ₽</span></li>
+          <li><span class="price-name">Стрижка + борода</span><span class="price-dots" aria-hidden="true"></span><span class="price-value">1800 ₽</span></li>
+          <li><span class="price-name">Камуфляж седины</span><span class="price-dots" aria-hidden="true"></span><span class="price-value">1000 ₽</span></li>
+          <li><span class="price-name">Детская стрижка</span><span class="price-dots" aria-hidden="true"></span><span class="price-value">900 ₽</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <p class="kicker">Онлайн-запись</p>
+        <h2 id="how-title">Как записаться</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Выберите услугу</h3>
+            <p>Откройте бота — в нём список услуг с ценами.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Выберите время</h3>
+            <p>Укажите дату — бот покажет только свободные часы.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Подтвердите в Telegram</h3>
+            <p>Оставьте имя и телефон, проверьте данные и нажмите «Подтвердить».</p>
+          </li>
+        </ol>
+        <div class="center">
+          <a class="btn" href="https://t.me/zakaza1bot" target="_blank" rel="noopener">Записаться онлайн</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="masters" aria-labelledby="masters-title">
+      <div class="container">
+        <p class="kicker">Команда</p>
+        <h2 id="masters-title">Мастера</h2>
+        <ul class="masters">
+          <li class="master">
+            <span class="avatar" aria-hidden="true">А</span>
+            <h3>Артём</h3>
+            <p>Мужские стрижки и борода</p>
+          </li>
+          <li class="master">
+            <span class="avatar" aria-hidden="true">Д</span>
+            <h3>Денис</h3>
+            <p>Стрижки и камуфляж седины</p>
+          </li>
+          <li class="master">
+            <span class="avatar" aria-hidden="true">Р</span>
+            <h3>Руслан</h3>
+            <p>Мужские и детские стрижки</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <p class="kicker">Ждём вас</p>
+        <h2 id="contacts-title">Адрес и часы работы</h2>
+        <div class="contacts">
+          <dl class="info">
+            <div>
+              <dt>Адрес</dt>
+              <dd>ул. Примерная, 1 <span class="demo-mark">демо-проект</span></dd>
+            </div>
+            <div>
+              <dt>Часы работы</dt>
+              <dd>Ежедневно 10:00–19:00</dd>
+            </div>
+            <div>
+              <dt>Запись</dt>
+              <dd>Онлайн через Telegram-бота</dd>
+            </div>
+          </dl>
+          <div class="contacts-cta">
+            <p>Свободное время видно сразу в боте — без звонков и ожидания ответа.</p>
+            <a class="btn" href="https://t.me/zakaza1bot" target="_blank" rel="noopener">Записаться онлайн</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Демо-проект. Разработка: <a href="../">Ильдар</a></p>
+      <p class="credit">Фото: <a href="https://unsplash.com/photos/table-with-grooming-tools-near-window-jbNWXql-fHQ" target="_blank" rel="noopener">Tsuyoshi Kozu / Unsplash</a></p>
+    </div>
+  </footer>
+</body>
+</html>

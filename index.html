@@ -134,9 +134,11 @@
         <div class="projects">
 
           <article class="card">
-            <!-- Заглушка: заменить скриншотом лендинга после этапа 2 -->
-            <button class="card-media" type="button" data-full="assets/img/barbershop-placeholder.svg" aria-label="Увеличить изображение: лендинг барбершопа «Пример»">
-              <img src="assets/img/barbershop-placeholder.svg" alt="Заглушка превью лендинга барбершопа «Пример»" width="1600" height="900" loading="lazy">
+            <button class="card-media" type="button" data-full="assets/img/barbershop.webp" aria-label="Увеличить изображение: лендинг барбершопа «Пример»">
+              <picture>
+                <source type="image/webp" srcset="assets/img/barbershop-800.webp 800w, assets/img/barbershop.webp 1600w" sizes="(min-width: 1280px) 380px, (min-width: 768px) 46vw, 100vw">
+                <img src="assets/img/barbershop.png" alt="Коллаж лендинга барбершопа «Пример»: первый экран с кнопкой записи, прайс и мастера" width="1000" height="463" loading="lazy">
+              </picture>
             </button>
             <div class="card-body">
               <h3>Лендинг барбершопа «Пример»</h3>
