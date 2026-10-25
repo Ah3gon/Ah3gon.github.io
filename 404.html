@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — Ильдар</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap">
+  <!-- Пути от корня: GitHub Pages отдаёт эту страницу для любого адреса, в том числе вложенного -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <main class="hero not-found">
+    <div class="container">
+      <p class="eyebrow">Ошибка 404</p>
+      <h1>Такой страницы нет</h1>
+      <p class="lead">Возможно, ссылка устарела или в адресе опечатка.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/">На главную</a>
+        <a class="btn btn-ghost" href="/#projects">К проектам</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

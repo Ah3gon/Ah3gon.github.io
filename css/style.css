@@ -250,6 +250,7 @@ a:hover { color: var(--accent-hover); }
 }
 .hero h1 .accent { display: block; }
 .accent { color: var(--accent); }
+.not-found { min-height: 100vh; display: flex; align-items: center; }
 .lead {
   max-width: 40ch;
   font-size: clamp(1.1rem, 1rem + .5vw, 1.35rem);

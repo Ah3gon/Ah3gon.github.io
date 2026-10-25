@@ -1,5 +1,6 @@
 # Локальные настройки Claude Code и редакторов
 .claude/
+CLAUDE.md
 .vscode/
 .idea/
 
